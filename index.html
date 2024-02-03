@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./Site.css" />
+
+    <script src="./index.js"></script>
+
+    <!-- Here you can change your favicon icon -->
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Font-Awesome-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="  https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--Loader Gif Script-->
+    <script>
+        $(window).on('load', function () {
+            setTimeout(removeLoader, 100);
+        });
+
+        function removeLoader() {
+            $(".loader").fadeOut(500, function () {
+                $(".loader").remove();
+            });
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+    <div class="loader"> </div>
+    <div class="container-fluid">
+
+        <div class="row" id="home">
+
+            <header style="padding: 0;">
+                <div class="navclass mb-0">
+                    <div id="particles-js">
+                    </div>
+                </div>
+                <div class="text-center">
+
+                    <!-- 3-LINE-MENU  -->
+
+                </div>
+                <div class="text-center">
+                    <input type="checkbox" id="ham-menu">
+                    <label for="ham-menu">
+                        <div class="hide-des">
+
+                            <img src="./images/line.png" id="sidenav_button" onclick="changeImage()" alt="1"
+                                class="icon">
+
+                        </div>
+
+                    </label>
+                    <div class="full-page-green"></div>
+                    <div class="ham-menu">
+                        <ul class="bold-text menu-text " style="color: #ffffff; ">
+
+
+                            <a href="#home" onclick="closeNav()">Home
+                                <br><br></a>
+                            <a href="#aboutme" onclick="closeNav()">About Me<br><br></a>
+                            <a href="#skills" onclick="closeNav()">Skills<br><br></a>
+                            <a href="#academics" onclick="closeNav()">Academics<br><br></a>
+                            <a href="#contact-me" onclick="closeNav()">Contact
+                                Me<br><br></a>
+
+                        </ul>
+                    </div>
+
+                    <!-- Here you can change your profile photo -->
+
+                    <img class="pic " src="C:\Users\kumar\Pictures\Screenshots\FB_IMG_1665768347919.jpg" alt="Profile pic">
+
+
+                </div>
+
+            </header>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="nameBG">
+
+                <h1 class="name mt-0"><br>Bongu Sanjay</h1>
+                
+            </div>
+
+        </div>
+
+
+        <!-- Social Media Icon -->
+
+        <div class="row">
+
+            <nav style="padding:0">
+
+                <div class="gradient-border text-center social-icon" id="animation">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/bunny__boy_1119?igsh=dWpnMm5iZWdsMmE" target="_blank"><img class='ig' type="image"
+                            onclick="oninsta()" src="C:\Users\kumar\Downloads\icons8-instagram-48.png" alt="Insta Img"></a>
+					<!-- facebook -->
+                    <a href="https://www.facebook.com/b.sanjay.528?mibextid=ZbWKwL" target="_blank"><img class='ig m-2' type="image"
+                            onclick="onfb()" src="C:\Users\kumar\Downloads\icons8-facebook-48.png" alt="fb Img"></a>		
+
+                    <!-- Linkdin -->
+                    <a href="https://www.linkedin.com/in/bunny-sanjay-492721235" target="_blank"><img class='ln' type="image"
+                            onclick="onlinkdin()" src="C:\Users\kumar\Downloads\icons8-linkedin-94.png" alt="Linkdin Img"></a> 
+							
+                    <!-- github -->
+					<a href="https://github.com/SanjayBongu" target="_blank"><img class='ln m-2' type="image"
+                            onclick="ongithub()" src="C:\Users\kumar\Desktop\port folio 14\Portfolio-Dark-Theme-main\MySite\images\icons8-github-96.png" alt="github Img"></a>
+							                    
+                </div>
+            </nav>
+        </div>
+
+        <!-- Info(E-mail,Number,Location) -->
+
+        <div class="row text-center E-mail-line" style="margin-top: 2px; background-image: url(./images/dark1.jpg);">
+
+            <div class=" col-md-4 " style="margin-bottom: 5px;">
+                <p class="E-mail">Email ID &nbsp; <i class="far fa-envelope"></i></p>
+
+                <a href="mailto: {Enter Your E-mail id}" target="_blank" class="E-mail-id">
+                    <p>bunnysanjay56@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="col-md-4 ">
+                <p class="E-mail ">Contact Number &nbsp; <i class="fas fa-mobile-alt"></i></p>
+                <a href="tel:{Enter Your Contact Number}" target="_blank" class="E-mail-id ">
+                    <p>+91-9676625833</p>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <p class="E-mail">Location &nbsp;<i class="fas fa-map-marker-alt"></i></p>
+                <a href="#Enter your google map location link" target="_blank" class="E-mail-id ">
+                    <p>Palasa</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="row">
+
+            <div class="about-section" ;>
+
+
+                <h2 class="aboutmetext" id="aboutme" style="color:#ffffff; ;">About Me &nbsp; <i
+                        class="far fa-user"></i><br>
+                </h2>
+
+
+
+                <p>
+                    <br>
+                    iam,Sanjay As a front-end developer, I specialize in creating and designing the user interface (UI) and user experience (UX) of websites and web applications. My expertise lies in using coding languages like HTML, CSS, and JavaScript to bring digital designs to life focusing on aspects users interact directly.”
+                    <br><br>
+                </p>
+
+
+                <!-- About Me(Languages,Nationality) -->
+                <div class="row text-center ">
+
+                    <div class="col-md-4 bug">
+                        <h2 class="languages">LANGUAGES &nbsp;<i class="fas fa-language"></i>
+                        </h2>
+
+                        <h4 class="ans">English<br>Telugu<br>Hindi
+                        </h4>
+
+                    </div>
+
+                    <div class="col-md-4 bug">
+                        <h2 class="languages">NATIONALITY &nbsp; <i class="far fa-flag"></i>
+                        </h2>
+
+                        <h4 class="ans">
+                            INDIAN</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!---------------------------------------------SKILLS ---------------------------------------->
+
+
+
+        <div class="row skills Skills-border" id="skills">
+
+            <div class="col-md-12 " style="margin-bottom: 35px;">
+
+                <h1 class="Skills m-2">SKILLS &nbsp; <i class="fas fa-brain"></i><br></h1>
+
+
+
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+
+
+                        <div class="card" style="background-color:rgb(33, 33, 33);">
+
+                            <!-- According to Your Skill-type, you can chaneg image here -->
+                            <img src="C:\Users\kumar\Downloads\icons8-css-logo-96.png" alt="code" class="img-fluid  mx-auto d-block">
+                            <div>
+                                <h2 style=" color: #bb86fc;">
+                                    CSS
+                                </h2>
+
+
+                                <p class="cardfirst">
+                                <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 bugimg">
+
+
+                        <div class="card" style="background-color:rgb(33, 33, 33);">
+                            <!-- According to Your Skill-type, you can chaneg image here -->
+                            <img class="web img-fluid  mx-auto d-block" src="C:\Users\kumar\Downloads\icons8-java-100.png" alt="web" class="p-2">
+                            <div>
+                                <h2 style="color: #bb86fc;">JAVA</h2>
+
+                                <p class="cardsecond">
+                                    <br>
+
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4 bugimg">
+                        <div class="card" style="background-color:rgb(33, 33, 33)" ;>
+                            <!-- According to Your Skill-type, you can chaneg image here -->
+                            <img class="android img-fluid mx-auto d-block" src="C:\Users\kumar\Downloads\icons8-html-logo-96.png" alt="John">
+
+                            <div>
+                                <h2 style="color: #bb86fc;">HTML </h2>
+
+                                <p class="cardthird">
+                                    <br>
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--------------------------ACADEMICS ----------------------->
+
+        <div class="row contenteditable academics-in " id="academics">
+		<center>
+            <div class="col-md-12  ">
+
+                <h1 class="Skills m-2 academics">ACADEMICS &nbsp;<i class="fas fa-university"></i><br></h1>
+            </div>
+
+            <div class="row text-center">
+			<center>
+
+                <div class="col-md-4 border">
+                    <p class="big text-white font-weight-light"><br><B>Bachelor in Informtion Technology<B><br></p>
+                    <h3 class="academics-titles border" style="color: #e5ebfe;"><br>AITAM-Tekkali<br><br>
+                    </h3>
+
+                    <h5 class="academics-titles-in" style="color: #ffb84d;"><br>2021-2025</h5>
+                </div>
+				</center>
+            </div>
+		</center>
+        </div>
+		 <!---------------------------------------------CERTIFICATES ---------------------------------------->
+
+          <div class="row contenteditable academics-in " id="certificate">
+
+            <div class="col-md-12 " style="margin-bottom: 50px;">
+
+                <h1 class="certificate m-2">CERTIFICATES &nbsp; <i class="fas fa-certificate"></i><br></h1>
+            </div>
+
+			<ul style="padding:10px ;margin:10px 0px 0px -10px  10px">
+		<div class="bala">		
+		<img src="cert.jpg" width="245px" height="245px" style="margin-left:40px;" >
+		<div class="bala">
+		<img src="cert2.png" width="245px" height="245px" style="margin-left:40px;>
+		<div class="bala">
+		<img src="cert3.jpg" width="245px" height="245px" style="margin-left:40px;">
+		<div class="bala"> 
+		<img src="cert 1.jpg" width="245px" height="245px" style="margin-left:40px;" >
+		<div class="bala">		
+		<img src="cert4.jpg" width="245px" height="245px" style="margin-left:40px;" >
+		</div>
+		</div>
+		</ul>
+                
+                
+
+            </div>
+
+        </div>
+
+
+				
+        <!---------------------------------------------------CONTACT ME ------------------------------------------------>
+        <div class="row contactme-bg" id="contact-me">
+
+            <div class="col-md-8  ">
+
+                <h2 class="contactme-title "> Contact Me &nbsp; <i class="fas fa-id-card-alt"></i></h2>
+
+
+                <form method="post" onsubmit="return ressubmit(event)" action="https://api.web3forms.com/submit" method= "POST" id="form">
+					<input type="hidden" name="access_key" value="710fda75-de6d-463f-ad76-1db548238787">
+                    <table>
+
+                        <tr>
+                            <th><label for="name"> Name : </label></th>
+                            <td> <input type="text" autocomplete="off" autocomplete="off" height=100px id="name"
+                                    name="name" placeholder="Enter your Name..." required>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <th><label for="email"> Email : </label> </th>
+                            <td><input type="email" autocomplete="off" id="email" name="email"
+                                    placeholder="Enter your Email ID..." required></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="phone"> Number : </label> </th>
+                            <td><input type="tel" autocomplete="off" id="phone" name="phone"
+                                    placeholder="Enter your Phone no..."></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="message"> Message : </label> </th>
+                            <td><textarea id="message" autocomplete="off" name="message"
+                                    placeholder="Enter Message..."></textarea></td>
+                        </tr>
+
+                    </table>
+
+                    <div class="buttons">
+                        <input type="submit" value="Submit" name="submit">
+                        <input type="reset" value="Reset" name="reset">
+
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-md-4  contactme-right">
+
+                <h1><br>Address &nbsp;<i class="fas fa-map-marker-alt"></i> </h1>
+
+                <h5> <a class="contactme-links" href="#Enter your location link">
+                        Srikakulam,Andhra Pradesh,India</a></h5>
+
+                <h1><br>E-mail &nbsp;<i class="far fa-envelope"></i></h1>
+
+                <h5> <a class="contactme-links" href="mailto:{Enter your email-id}/">
+                        bunnysanjay56@gmail</a></h5>
+
+                <h1><br>Call &nbsp;<i class="fas fa-phone-volume"></i> </h1>
+
+                <h5> <a class="contactme-links" href="tel:{Your Phone Number}">
+                        +91- 9676625833</a></h5>
+
+
+
+            </div>
+
+        </div>
+
+
+        <!------------------------------------------- Footer -------------------------------------->
+        <div class="row text-center ">
+
+            <footer class="ft social-icon">
+
+                <p class="text-secondary mb-0"> Follow Me </p>
+
+                <div style="height: 30px;">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/bunny__boy_1119?igsh=dWpnMm5iZWdsMmE=" target="_blank"><img class='ig m-2' type="image"
+                            onclick="oninsta()" src="C:\Users\kumar\Downloads\icons8-instagram-48.png" alt="Insta Img"></a>
+							
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com/b.sanjay.528?mibextid=ZbWKwL" target="_blank"><img class='ig m-2' type="image"
+                            onclick="onfacebook()" src="C:\Users\kumar\Downloads\icons8-facebook-48.png" alt="facebook Img"></a>						                    
+
+                    <!-- Linkdin -->
+                    <a href="https://www.linkedin.com/in/bunny-sanjay-492721235" target="_blank"><img class='ln m-2' type="image"
+                            onclick="onlinkdin()" src="C:\Users\kumar\Downloads\icons8-linkedin-94.png" alt="Linkdin Img"></a>
+					<!-- github -->
+					<a href="https://github.com/SanjayBongu" target="_blank"><img class='ln m-2' type="image"
+                            onclick="ongithub()" src="C:\Users\kumar\Desktop\port folio 14\Portfolio-Dark-Theme-main\MySite\images\icons8-github-96.png" alt="github Img"></a>
+                </div>
+                <p class="text-secondary ft-copyright  small">&copy; All rights reserved by ....</p>
+            </footer>
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+
+
+</html>
